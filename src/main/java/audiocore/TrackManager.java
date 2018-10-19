@@ -11,6 +11,11 @@ import net.dv8tion.jda.core.entities.VoiceChannel;
 import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;
 
+
+/**
+ * Class for Managing track operations
+ * @author Christoph Pelzer
+ */
 public class TrackManager extends AudioEventAdapter {
     private final AudioPlayer PLAYER;
     private final Queue<AudioInfo> QUEUE;

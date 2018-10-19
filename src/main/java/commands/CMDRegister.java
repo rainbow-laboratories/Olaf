@@ -4,6 +4,10 @@ import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 import java.util.ArrayList;
 
+/**
+ * Command class needed to create the command.
+ * @author Christoph Pelzer
+ */
 public class CMDRegister implements Command {
 
     public boolean called(ArrayList<String> args, MessageReceivedEvent event) {

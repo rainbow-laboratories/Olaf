@@ -3,6 +3,10 @@ package audiocore;
 import com.sedmelluq.discord.lavaplayer.track.AudioTrack;
 import net.dv8tion.jda.core.entities.Member;
 
+/**
+ * Wrapper class to store Track and Author together
+ * @author Christoph Pelzer
+ */
 public class AudioInfo {
 
     private final AudioTrack TRACK;

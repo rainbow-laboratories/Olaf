@@ -5,6 +5,10 @@ import utils.variables;
 
 import java.util.ArrayList;
 
+/**
+ * Command class needed to create the command.
+ * @author Christoph Pelzer
+ */
 public class CMDPrefix implements Command {
     public boolean called(ArrayList<String> args, MessageReceivedEvent event) {
         return false;

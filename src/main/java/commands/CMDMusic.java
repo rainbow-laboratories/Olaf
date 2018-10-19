@@ -23,6 +23,10 @@ import java.util.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Command class needed to create the command.
+ * @author Christoph Pelzer
+ */
 public class CMDMusic implements Command {
 
     private static final int PLAYLIST_LIMIT = 1000;

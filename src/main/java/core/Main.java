@@ -15,6 +15,10 @@ import utils.variables;
 
 import javax.security.auth.login.LoginException;
 
+/**
+ * Main Class
+ * @author Christoph Pelzer
+ */
 public class Main {
 
     public static void main(String[] args) {

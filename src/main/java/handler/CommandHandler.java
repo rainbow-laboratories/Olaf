@@ -5,6 +5,10 @@ import core.CommandParser;
 
 import java.util.HashMap;
 
+/**
+ * Handles the parsed command and acts if the command is good *
+ * @author Christoph Pelzer
+ */
 public class CommandHandler {
     public static final CommandParser parser = new CommandParser();
     public static HashMap<String, Command> commands = new HashMap<String, Command>();

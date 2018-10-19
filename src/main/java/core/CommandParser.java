@@ -5,6 +5,10 @@ import utils.variables;
 
 import java.util.ArrayList;
 
+/**
+ * Parser class to translate a given message with prefix into every part
+ * @author Christoph Pelzer
+ */
 public class CommandParser {
 
     public static CommandContainer parse(String raw, MessageReceivedEvent event) {
