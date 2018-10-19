@@ -1,5 +1,6 @@
 package core;
 
+import commands.CMDMusic;
 import commands.CMDPrefix;
 import commands.CMDRegister;
 import handler.CommandHandler;
@@ -41,5 +42,6 @@ public class Main {
     public static void addCommands() {
         CommandHandler.commands.put("prefix", new CMDPrefix());
         CommandHandler.commands.put("register", new CMDRegister());
+        CommandHandler.commands.put("music", new CMDMusic());
     }
 }
