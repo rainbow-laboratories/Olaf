@@ -1,4 +1,4 @@
-package listener;
+package de.cpelzer.listener;
 
 import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.events.ReadyEvent;

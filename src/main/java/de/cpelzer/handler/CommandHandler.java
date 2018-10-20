@@ -1,7 +1,7 @@
-package handler;
+package de.cpelzer.handler;
 
-import commands.Command;
-import core.CommandParser;
+import de.cpelzer.commands.Command;
+import de.cpelzer.core.CommandParser;
 
 import java.util.HashMap;
 

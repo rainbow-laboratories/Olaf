@@ -1,8 +1,8 @@
-package commands;
+package de.cpelzer.commands;
 
-import audiocore.AudioInfo;
-import audiocore.PlayerSendHandler;
-import audiocore.TrackManager;
+import de.cpelzer.audiocore.AudioInfo;
+import de.cpelzer.audiocore.PlayerSendHandler;
+import de.cpelzer.audiocore.TrackManager;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
@@ -222,6 +222,6 @@ public class CMDMusic implements Command {
 
     @Override
     public String help() {
-        return "I know the commands play, info, shuffle, queue, stop, skip";
+        return "I know the de.cpelzer.commands play, info, shuffle, queue, stop, skip";
     }
 }

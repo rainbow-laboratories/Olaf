@@ -1,9 +1,9 @@
-package listener;
+package de.cpelzer.listener;
 
-import handler.CommandHandler;
+import de.cpelzer.handler.CommandHandler;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
-import utils.variables;
+import de.cpelzer.utils.variables;
 
 /**
  * Command Listener which reacts on every message recieved and checks if its a command

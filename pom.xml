@@ -69,7 +69,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>core.Main</mainClass>
+                            <mainClass>de.cpelzer.core.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

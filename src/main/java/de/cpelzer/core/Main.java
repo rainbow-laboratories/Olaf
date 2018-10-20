@@ -1,17 +1,17 @@
-package core;
+package de.cpelzer.core;
 
-import commands.CMDMusic;
-import commands.CMDPrefix;
-import commands.CMDRegister;
-import handler.CommandHandler;
-import listener.CommandListener;
-import listener.ReadyListener;
+import de.cpelzer.commands.CMDMusic;
+import de.cpelzer.commands.CMDPrefix;
+import de.cpelzer.commands.CMDRegister;
+import de.cpelzer.handler.CommandHandler;
+import de.cpelzer.listener.CommandListener;
+import de.cpelzer.listener.ReadyListener;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
-import utils.variables;
+import de.cpelzer.utils.variables;
 
 import javax.security.auth.login.LoginException;
 

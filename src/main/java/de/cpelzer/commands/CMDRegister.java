@@ -1,4 +1,4 @@
-package commands;
+package de.cpelzer.commands;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 

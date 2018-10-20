@@ -1,4 +1,4 @@
-package utils;
+package de.cpelzer.utils;
 
 /**
  * Variable class to store constants and other stuff
