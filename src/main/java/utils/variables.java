@@ -1,5 +1,9 @@
 package utils;
 
+/**
+ * Variable class to store constants and other stuff
+ * @author Christoph Pelzer
+ */
 public class variables {
     public static final String TOKEN = "";
     public static String prefix = "!";
