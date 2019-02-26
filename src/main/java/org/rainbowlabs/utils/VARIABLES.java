@@ -8,7 +8,7 @@ public final class VARIABLES {
     public static final String TOKEN = "";
     public static String prefix = "!";
 
-    private VARIABLES() {}
+    public VARIABLES() {}
 
     public String getPrefix() {
         return prefix;

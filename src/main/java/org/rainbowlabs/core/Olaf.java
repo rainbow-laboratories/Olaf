@@ -35,10 +35,8 @@ public class Olaf {
         addCommands();
 
         try {
-            JDA jda = builder.buildBlocking();
+            JDA jda = builder.build();
         } catch (LoginException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
