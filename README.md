@@ -10,4 +10,7 @@
   <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/tag-date/stoffel2107/Olaf.svg">
   <img alt="GitHub release" src="https://img.shields.io/github/release/stoffel2107/Olaf.svg">
 </p>
-A simple discord bot supposed to do everything
+
+<b>
+    A simple discord bot supposed to do everything
+</b>
