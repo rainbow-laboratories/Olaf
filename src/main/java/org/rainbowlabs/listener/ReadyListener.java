@@ -1,4 +1,4 @@
-package de.cpelzer.listener;
+package org.rainbowlabs.listener;
 
 import net.dv8tion.jda.core.entities.Guild;
 import net.dv8tion.jda.core.events.ReadyEvent;

@@ -1,7 +1,7 @@
-package de.cpelzer.core;
+package org.rainbowlabs.core;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import de.cpelzer.utils.variables;
+import org.rainbowlabs.utils.VARIABLES;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CommandParser {
 
     public static CommandContainer parse(String raw, MessageReceivedEvent event) {
-        String beheaded = raw.replaceFirst("\\" + variables.prefix, "");
+        String beheaded = raw.replaceFirst("\\" + VARIABLES.prefix, "");
         String[] splitbeheaded = beheaded.split(" ");
         String invoke = splitbeheaded[0];
         ArrayList<String> split = new ArrayList<String>();

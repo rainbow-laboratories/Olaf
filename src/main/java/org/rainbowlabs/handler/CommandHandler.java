@@ -1,7 +1,7 @@
-package de.cpelzer.handler;
+package org.rainbowlabs.handler;
 
-import de.cpelzer.commands.Command;
-import de.cpelzer.core.CommandParser;
+import org.rainbowlabs.commands.Command;
+import org.rainbowlabs.core.CommandParser;
 
 import java.util.HashMap;
 

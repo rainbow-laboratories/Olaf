@@ -1,4 +1,4 @@
-package de.cpelzer.commands;
+package org.rainbowlabs.commands;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 

@@ -1,30 +1,30 @@
-package de.cpelzer.core;
+package org.rainbowlabs.core;
 
-import de.cpelzer.commands.CMDMusic;
-import de.cpelzer.commands.CMDPrefix;
-import de.cpelzer.commands.CMDRegister;
-import de.cpelzer.handler.CommandHandler;
-import de.cpelzer.listener.CommandListener;
-import de.cpelzer.listener.ReadyListener;
+import org.rainbowlabs.commands.CMDMusic;
+import org.rainbowlabs.commands.CMDPrefix;
+import org.rainbowlabs.commands.CMDRegister;
+import org.rainbowlabs.handler.CommandHandler;
+import org.rainbowlabs.listener.CommandListener;
+import org.rainbowlabs.listener.ReadyListener;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
-import de.cpelzer.utils.variables;
+import org.rainbowlabs.utils.VARIABLES;
 
 import javax.security.auth.login.LoginException;
 
 /**
- * Main Class
+ * Olaf Class
  * @author Christoph Pelzer
  */
-public class Main {
+public class Olaf {
 
     public static void main(String[] args) {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
 
-        builder.setToken(variables.TOKEN);
+        builder.setToken(VARIABLES.TOKEN);
         builder.setAutoReconnect(true);
         builder.setStatus(OnlineStatus.ONLINE);
         builder.setGame(Game.playing("CARDS AGAINST DOWNTIME"));

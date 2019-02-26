@@ -1,18 +1,20 @@
-package de.cpelzer.utils;
+package org.rainbowlabs.utils;
 
 /**
  * Variable class to store constants and other stuff
  * @author Christoph Pelzer
  */
-public class variables {
+public final class VARIABLES {
     public static final String TOKEN = "";
     public static String prefix = "!";
+
+    private VARIABLES() {}
 
     public String getPrefix() {
         return prefix;
     }
 
     public void setPrefix(String PREFIX) {
-        variables.prefix = PREFIX;
+        VARIABLES.prefix = PREFIX;
     }
 }

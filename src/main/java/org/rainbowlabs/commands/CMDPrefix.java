@@ -1,7 +1,7 @@
-package de.cpelzer.commands;
+package org.rainbowlabs.commands;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import de.cpelzer.utils.variables;
+import org.rainbowlabs.utils.VARIABLES;
 
 import java.util.ArrayList;
 
@@ -16,7 +16,7 @@ public class CMDPrefix implements Command {
 
     public void action(ArrayList<String> args, MessageReceivedEvent event) {
 
-        variables c = new variables();
+        VARIABLES c = new VARIABLES();
         if (args.size() == 0) {
             event.getTextChannel().sendMessage("Your current prefix is: " + c.getPrefix()).queue();
         } else {
@@ -32,6 +32,6 @@ public class CMDPrefix implements Command {
     }
 
     public String help() {
-        return "Try " + variables.prefix + "prefix ?";
+        return "Try " + VARIABLES.prefix + "prefix ?";
     }
 }

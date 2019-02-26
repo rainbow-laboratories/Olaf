@@ -1,8 +1,8 @@
-package de.cpelzer.commands;
+package org.rainbowlabs.commands;
 
-import de.cpelzer.audiocore.AudioInfo;
-import de.cpelzer.audiocore.PlayerSendHandler;
-import de.cpelzer.audiocore.TrackManager;
+import org.rainbowlabs.audiocore.AudioInfo;
+import org.rainbowlabs.audiocore.PlayerSendHandler;
+import org.rainbowlabs.audiocore.TrackManager;
 import com.sedmelluq.discord.lavaplayer.player.AudioLoadResultHandler;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayer;
 import com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager;
