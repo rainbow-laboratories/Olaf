@@ -1,4 +1,4 @@
 # Olaf
 A simple discord bot supposed to do everything
 
-[![Build Status](https://jenkins.rainbowlabs.org/job/Olaf/badge/icon)](https://jenkins.rainbowlabs.org/job/Olaf/)
+<a href='https://jenkins.rainbowlabs.org/job/Olaf/'><img src='https://jenkins.rainbowlabs.org/buildStatus/icon?job=Olaf'></a>
