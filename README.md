@@ -10,6 +10,7 @@
 [![GitHub Last Commit](https://img.shields.io/github/last-commit/stoffel2107/Olaf.svg)](https://github.com/rainbow-laboratories/Olaf)
 [![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/stoffel2107/Olaf.svg)](https://github.com/rainbow-laboratories/Olaf)
 [![GitHub release](https://img.shields.io/github/release/stoffel2107/Olaf.svg)](https://github.com/rainbow-laboratories/Olaf)
+[![Maintainability Rating](https://sonar.rainbowlabs.net/api/project_badges/measure?project=Olaf&metric=sqale_rating)](https://sonar.rainbowlabs.net/dashboard?id=Olaf)
 
 # Olaf
 
