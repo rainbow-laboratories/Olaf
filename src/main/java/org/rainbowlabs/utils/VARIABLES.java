@@ -6,7 +6,7 @@ package org.rainbowlabs.utils;
  */
 public final class VARIABLES {
     public static final String TOKEN = "";
-    public static String prefix = "!";
+    private static String prefix = "!";
 
     public VARIABLES() {}
 
