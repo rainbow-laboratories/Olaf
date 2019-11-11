@@ -14,4 +14,4 @@
 
 # Olaf
 
-A simple discord bot supposed to do everything 'I like a warm hug'
+##### A simple discord bot supposed to do everything 'I like a warm hug'
