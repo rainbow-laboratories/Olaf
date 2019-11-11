@@ -10,11 +10,11 @@ public final class VARIABLES {
 
     public VARIABLES() {}
 
-    public String getPrefix() {
+    public static String getPrefix() {
         return prefix;
     }
 
-    public void setPrefix(String PREFIX) {
+    public static void setPrefix(String PREFIX) {
         VARIABLES.prefix = PREFIX;
     }
 }

@@ -9,8 +9,8 @@ import java.util.ArrayList;
  * @author Christoph Pelzer
  */
 public interface Command {
-    public boolean called(ArrayList<String> args, MessageReceivedEvent event);
-    public void action(ArrayList<String> args, MessageReceivedEvent event);
-    public void executed(boolean sucess, MessageReceivedEvent event);
-    public String help();
+    boolean called(ArrayList<String> args, MessageReceivedEvent event);
+    void action(ArrayList<String> args, MessageReceivedEvent event);
+    void executed(boolean sucess, MessageReceivedEvent event);
+    String help();
 }

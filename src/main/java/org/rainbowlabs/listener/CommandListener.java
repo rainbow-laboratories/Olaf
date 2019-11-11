@@ -11,7 +11,7 @@ import org.rainbowlabs.utils.VARIABLES;
  */
 public class CommandListener extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent event) {
-        if((event.getMessage().getContentRaw().startsWith(VARIABLES.prefix) && event.getMessage().getAuthor().getId() != event.getJDA().getSelfUser().getId())) {
+        if((event.getMessage().getContentRaw().startsWith(VARIABLES.getPrefix()) && event.getMessage().getAuthor().getId() != event.getJDA().getSelfUser().getId())) {
             CommandHandler.handleCommand(CommandHandler.parser.parse(event.getMessage().getContentRaw(), event));
         } else if (event.getAuthor().getName().matches("Silas770")) {
             System.out.println(event.getAuthor().getName());
@@ -20,7 +20,7 @@ public class CommandListener extends ListenerAdapter {
         } else if(event.getMessage().getMentionedMembers().size() > 0) {
             if(event.getMessage().getMentionedMembers().get(0).getUser().equals(event.getJDA().getSelfUser())) {
                 String tempString = event.getMessage().getContentRaw();
-                String newString = tempString.replace("<@" + event.getJDA().getSelfUser().getId() + "> ", VARIABLES.prefix);
+                String newString = tempString.replace("<@" + event.getJDA().getSelfUser().getId() + "> ", VARIABLES.getPrefix());
                 CommandHandler.handleCommand(CommandHandler.parser.parse(newString, event));
             }
         }

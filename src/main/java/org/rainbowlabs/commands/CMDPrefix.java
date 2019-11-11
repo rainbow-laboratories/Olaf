@@ -32,6 +32,6 @@ public class CMDPrefix implements Command {
     }
 
     public String help() {
-        return "Try " + VARIABLES.prefix + "prefix ?";
+        return "Try " + VARIABLES.getPrefix() + "prefix ?";
     }
 }

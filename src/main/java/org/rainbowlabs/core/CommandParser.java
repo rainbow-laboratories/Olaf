@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class CommandParser {
 
     public static CommandContainer parse(String raw, MessageReceivedEvent event) {
-        String beheaded = raw.replaceFirst("\\" + VARIABLES.prefix, "");
+        String beheaded = raw.replaceFirst("\\" + VARIABLES.getPrefix(), "");
         String[] splitbeheaded = beheaded.split(" ");
         String invoke = splitbeheaded[0];
         ArrayList<String> split = new ArrayList<String>();
