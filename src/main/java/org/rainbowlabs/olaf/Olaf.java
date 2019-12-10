@@ -1,17 +1,17 @@
-package org.rainbowlabs.core;
+package org.rainbowlabs.olaf;
 
-import org.rainbowlabs.commands.CMDMusic;
-import org.rainbowlabs.commands.CMDPrefix;
-import org.rainbowlabs.commands.CMDRegister;
-import org.rainbowlabs.handler.CommandHandler;
-import org.rainbowlabs.listener.CommandListener;
-import org.rainbowlabs.listener.ReadyListener;
+import org.rainbowlabs.olaf.commands.CMDPrefix;
+import org.rainbowlabs.olaf.commands.CMDRegister;
+import org.rainbowlabs.olaf.commands.CMDSilas;
+import org.rainbowlabs.olaf.handler.CommandHandler;
+import org.rainbowlabs.olaf.listener.CommandListener;
+import org.rainbowlabs.olaf.listener.ReadyListener;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
-import org.rainbowlabs.utils.VARIABLES;
+import org.rainbowlabs.olaf.utils.VARIABLES;
 
 import javax.security.auth.login.LoginException;
 
@@ -20,7 +20,6 @@ import javax.security.auth.login.LoginException;
  * @author Christoph Pelzer
  */
 public class Olaf {
-
     public static void main(String[] args) {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
 
@@ -42,8 +41,8 @@ public class Olaf {
     }
 
     public static void addCommands() {
-        CommandHandler.commands.put("prefix", new CMDPrefix());
-        CommandHandler.commands.put("register", new CMDRegister());
-        CommandHandler.commands.put("music", new CMDMusic());
+        CommandHandler.getCommandHandler().addCommand("prefix", new CMDPrefix());
+        CommandHandler.getCommandHandler().addCommand("register", new CMDRegister());
+        CommandHandler.getCommandHandler().addCommand("silas", new CMDSilas());
     }
 }

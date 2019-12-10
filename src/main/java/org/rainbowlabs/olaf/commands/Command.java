@@ -1,4 +1,4 @@
-package org.rainbowlabs.commands;
+package org.rainbowlabs.olaf.commands;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
@@ -11,6 +11,6 @@ import java.util.ArrayList;
 public interface Command {
     boolean called(ArrayList<String> args, MessageReceivedEvent event);
     void action(ArrayList<String> args, MessageReceivedEvent event);
-    void executed(boolean sucess, MessageReceivedEvent event);
+    void executed(boolean success, MessageReceivedEvent event);
     String help();
 }
