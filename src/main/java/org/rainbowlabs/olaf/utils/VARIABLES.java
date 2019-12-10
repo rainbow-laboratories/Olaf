@@ -9,7 +9,7 @@ import java.util.logging.Logger;
  * @author Christoph Pelzer
  */
 public final class VARIABLES {
-    public static final String TOKEN = "NTAyOTExMTI0OTMzNzA1NzU2.XcnPkg.LSJBUji9WK2mZsVpMUwCizrURwo";
+    public static final String TOKEN = "";
     private static Logger LOGGER = Logger.getLogger(VARIABLES.class.getName());
     private static String prefix = "o!";
     private static boolean replaceSilasComment = true;
