@@ -1,4 +1,4 @@
-name: Java CI
+name: Olaf Code Quality
 
 on: [push]
 
