@@ -1,7 +1,7 @@
-package org.rainbowlabs.olaf.commands;
+package org.rainbowlabs.discordbot.olaf.commands;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import org.rainbowlabs.olaf.utils.VARIABLES;
+import org.rainbowlabs.discordbot.olaf.utils.VARIABLES;
 
 import java.util.ArrayList;
 import java.util.logging.Level;

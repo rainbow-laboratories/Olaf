@@ -1,8 +1,8 @@
-package org.rainbowlabs.olaf.handler;
+package org.rainbowlabs.discordbot.olaf.handler;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
-import org.rainbowlabs.olaf.commands.Command;
-import org.rainbowlabs.olaf.utils.VARIABLES;
+import org.rainbowlabs.discordbot.olaf.commands.Command;
+import org.rainbowlabs.discordbot.olaf.utils.VARIABLES;
 
 import java.util.ArrayList;
 import java.util.HashMap;

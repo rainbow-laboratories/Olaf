@@ -1,9 +1,9 @@
-package org.rainbowlabs.olaf.listener;
+package org.rainbowlabs.discordbot.olaf.listener;
 
-import org.rainbowlabs.olaf.handler.CommandHandler;
+import org.rainbowlabs.discordbot.olaf.handler.CommandHandler;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
-import org.rainbowlabs.olaf.utils.VARIABLES;
+import org.rainbowlabs.discordbot.olaf.utils.VARIABLES;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

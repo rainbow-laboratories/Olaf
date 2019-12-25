@@ -1,4 +1,4 @@
-package org.rainbowlabs.olaf.commands;
+package org.rainbowlabs.discordbot.olaf.commands;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 

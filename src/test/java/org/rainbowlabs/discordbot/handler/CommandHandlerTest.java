@@ -1,7 +1,8 @@
-package org.rainbowlabs.olaf.handler;
+package org.rainbowlabs.discordbot.handler;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.rainbowlabs.discordbot.olaf.handler.CommandHandler;
 
 public class CommandHandlerTest {
     @Test

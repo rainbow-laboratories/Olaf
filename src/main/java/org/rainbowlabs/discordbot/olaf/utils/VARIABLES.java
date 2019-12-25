@@ -1,4 +1,4 @@
-package org.rainbowlabs.olaf.utils;
+package org.rainbowlabs.discordbot.olaf.utils;
 
 
 import java.util.logging.Level;
@@ -9,7 +9,7 @@ import java.util.logging.Logger;
  * @author Christoph Pelzer
  */
 public final class VARIABLES {
-    public static final String TOKEN = "";
+    public static final String TOKEN = "NTUxMDQxNTc2ODYwOTA5NTY4.XgEd-Q.ZgOkC9-UQpoE5H0Dtz0EizrxmOg";
     private static Logger LOGGER = Logger.getLogger(VARIABLES.class.getName());
     private static String prefix = "o!";
     private static boolean replaceSilasComment = true;

@@ -1,17 +1,19 @@
-package org.rainbowlabs.olaf;
+package org.rainbowlabs.discordbot.olaf;
 
-import org.rainbowlabs.olaf.commands.CMDPrefix;
-import org.rainbowlabs.olaf.commands.CMDRegister;
-import org.rainbowlabs.olaf.commands.CMDSilas;
-import org.rainbowlabs.olaf.handler.CommandHandler;
-import org.rainbowlabs.olaf.listener.CommandListener;
-import org.rainbowlabs.olaf.listener.ReadyListener;
+import org.rainbowlabs.discordbot.olaf.commands.CMDPrefix;
+import org.rainbowlabs.discordbot.olaf.commands.CMDRegister;
+import org.rainbowlabs.discordbot.olaf.commands.CMDSilas;
+import org.rainbowlabs.discordbot.olaf.handler.CommandHandler;
+import org.rainbowlabs.discordbot.olaf.listener.CommandListener;
+import org.rainbowlabs.discordbot.olaf.listener.ReadyListener;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
-import org.rainbowlabs.olaf.utils.VARIABLES;
+import org.rainbowlabs.discordbot.olaf.utils.VARIABLES;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import javax.security.auth.login.LoginException;
 
@@ -19,8 +21,13 @@ import javax.security.auth.login.LoginException;
  * Olaf Class
  * @author Christoph Pelzer
  */
-public class Olaf {
-    public static void main(String[] args) {
+@Component
+public class Olaf implements CommandLineRunner {
+    public Olaf() {
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
         JDABuilder builder = new JDABuilder(AccountType.BOT);
 
         builder.setToken(VARIABLES.TOKEN);
