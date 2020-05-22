@@ -1,5 +1,6 @@
 package org.rainbowlabs.discordbot.olaf.commands;
 
+import lombok.extern.slf4j.Slf4j;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import org.rainbowlabs.discordbot.spring.application.SpringContext;
 import org.rainbowlabs.discordbot.spring.persistence.entities.Server;
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,6 +21,7 @@ import java.util.logging.Logger;
  * Command class needed to create the command.
  * @author Christoph Pelzer
  */
+@Slf4j
 public class CMDRegister implements Command {
     private static Logger logger = Logger.getLogger(CMDRegister.class.getName());
 
@@ -33,36 +36,20 @@ public class CMDRegister implements Command {
         Long userId = event.getAuthor().getIdLong();
         Optional<User> userEntity = userRepository.findById(userId);
         if (userEntity.isPresent()) {
-            User user = userEntity.get();
-            if (user.getServers().contains(event.getGuild().getIdLong())) {
-                event
-                        .getChannel()
-                        .sendMessage(event.getAuthor().getName()
-                                + " tried to register but was already registered.")
-                        .queue();
+            log.info("User id is: {}, Username is: {}", userEntity.get().getId(), userEntity.get().getName());
+            Optional<Server> optionalServer = serverRepository.findById(event.getGuild().getIdLong());
+            if (optionalServer.isPresent()) {
+                Server updatedServer = optionalServer.get();
+                updatedServer.addUser(userEntity.get());
+                serverRepository.save(updatedServer);
+            } else {
+                throw new IllegalArgumentException("Couldn't find the Server.. There's something srlsy wrong here");
             }
-
+        } else {
+            User user = new User(event.getAuthor().getIdLong(), event.getAuthor().getName());
+            userRepository.save(user);
+            action(args, event);
         }
-
-        User user = new User();
-        user.setId(event.getAuthor().getIdLong());
-        Optional<Server> serverOptional = serverRepository.findById(event.getGuild().getIdLong());
-        if (serverOptional.isEmpty()) {
-            event
-                    .getChannel()
-                    .sendMessage("We could not add the server to your user account...")
-                    .queue();
-            return;
-        }
-        user.addServer(serverOptional.get());
-        userRepository.save(user);
-
-        User savedUser = userRepository.findById(event.getAuthor().getIdLong()).get();
-        event
-                .getChannel()
-                .sendMessage(event.getAuthor().getName()
-                        + " the user object was saved, welcome:  " + savedUser )
-                .queue();
     }
 
     public void executed(boolean sucsess, MessageReceivedEvent event) {

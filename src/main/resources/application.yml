@@ -1,0 +1,26 @@
+spring:
+  profiles: default
+
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
+
+name: default-profile
+environment: production
+
+server:
+  port: 9000
+
+logging:
+  level:
+    org.rainbowlabs: DEBUG
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
+    file: "%d %p %c{1.} [%t] %m%n"
+
+  file: olaf.log

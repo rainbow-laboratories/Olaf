@@ -1,39 +1,65 @@
 package org.rainbowlabs.discordbot.spring.persistence.entities;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
 
 @Entity
 public class User {
     @Id
     private Long id;
 
-    @OneToMany(fetch = FetchType.EAGER)
-    private Set<Server> servers;
+    private long experience;
 
-    public User() {
-        servers = new HashSet<>();
+    private String name;
+
+    public User(long id) {
+        this.id = id;
+        this.name = "";
+        this.experience = 0;
     }
 
-    public Set<Server> getServers() {
-        return this.servers;
+    public User() {}
+
+    public User(long id, String name) {
+        this.id = id;
+        this.name = name;
+        this.experience = 0;
+    }
+
+    public void addExperience(long experience) {
+        this.experience += experience;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public void addServer(Server server) {
-        this.servers.add(server);
+    public Long getId() {
+        return id;
+    }
+
+    public long getExperience() {
+        return experience;
+    }
+
+    public void setExperience(long experience) {
+        this.experience = experience;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
     public String toString() {
-        return "ID: " + id + " servers: " + servers;
+        return "User{" +
+                "id=" + id +
+                ", experience=" + experience +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

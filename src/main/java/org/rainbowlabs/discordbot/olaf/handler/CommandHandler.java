@@ -51,9 +51,9 @@ public class CommandHandler {
         }
     }
 
-    public CommandHandler parse(String raw, MessageReceivedEvent event) {
+    public CommandHandler parse(String raw, MessageReceivedEvent event, String eventServerPrefix) {
         this.triggerEvent = event;
-        String headlessCommand = raw.replaceFirst(VARIABLES.getPrefix(), "");
+        String headlessCommand = raw.replaceFirst(eventServerPrefix, "");
         String[] fullCommand = headlessCommand.split(" ");
 
         ArrayList<String> tempArguments = new ArrayList<>();
